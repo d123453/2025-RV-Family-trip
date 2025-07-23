@@ -86,6 +86,24 @@
         .aspect-w-16 { position: relative; padding-bottom: 56.25%; }
         .aspect-h-9 { height: 0; }
         .aspect-w-16 > iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .list-item-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .delete-btn {
+            background: none;
+            border: none;
+            color: #ef4444; /* red-500 */
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .list-item-container:hover .delete-btn {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -279,7 +297,7 @@
                         <img src="https://i.ibb.co/6RLdcz5c/bearlake-trail.png" alt="Bear Lake Trail" class="rounded-lg shadow-md object-cover h-48 w-full">
                         <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjYzNDAxNjkvYjNiMjg1M2MwYWNiZDVhN2UzMDU4ODU1YTE4MTRlMWEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="Emerald Lake" class="rounded-lg shadow-md object-cover h-48 w-full">
                         <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNDAyNDEzNzYvYzZlZGNmYWZkNTY5YTFhZGUwMmRjNDFhOTVmZmUyNmYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="Alberta Falls" class="rounded-lg shadow-md object-cover h-48 w-full">
-                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTAyODg1ODgvYTQ5MGU0NWIzN2IxZDJmZjdmMmViOTYwODE3NDIxNjIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="Sprague Lake" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTAyODg1ODgvYTQ5MGU0NWIzN2IxZDJmZjdmMmViOTYwODE3NDIxNjIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3Zlcnnob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="Sprague Lake" class="rounded-lg shadow-md object-cover h-48 w-full">
                     </div>
                 </section>
 
@@ -655,22 +673,7 @@
                 arrow.style.transform = 'rotate(0deg)';
             }
         }
-
-        // --- DYNAMIC LIST FUNCTIONALITY ---
-        function addItemToList(listId, inputId) {
-            const list = document.getElementById(listId);
-            const input = document.getElementById(inputId);
-            const itemName = input.value.trim();
-
-            if (itemName) {
-                const li = document.createElement('li');
-                li.className = 'flex items-center';
-                li.innerHTML = `<input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 mr-3"><span>${itemName}</span>`;
-                list.appendChild(li);
-                input.value = '';
-            }
-        }
-
+        
         // --- MAP GENERATION ---
         function generateDay1Map() {
             const locations = {
@@ -805,6 +808,143 @@
         };
 
     </script>
+    
+    <!-- FIREBASE INTEGRATION SCRIPT -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+
+        // --- 1. PASTE YOUR FIREBASE CONFIG OBJECT HERE ---
+        const firebaseConfig = {
+            apiKey: "AIzaSyA6ld6nwIAJ4kkB8vv-Ghn7Pkn700ebOM8",
+            authDomain: "rvfamilytrip-28e56.firebaseapp.com",
+            projectId: "rvfamilytrip-28e56",
+            storageBucket: "rvfamilytrip-28e56.appspot.com",
+            messagingSenderId: "248656767489",
+            appId: "1:248656767489:web:6ce94b562ff1859c0d6e00",
+            measurementId: "G-DGXFWWHHYT"
+        };
+        // --------------------------------------------------
+        
+        // --- App Logic ---
+        const gearListEl = document.getElementById('personal-gear-list');
+        const foodListEl = document.getElementById('personal-food-list');
+
+        const createListItem = (itemName, listId) => {
+            const li = document.createElement('li');
+            li.className = 'list-item-container';
+            li.innerHTML = `
+                <div class="flex items-center">
+                    <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 mr-3">
+                    <span>${itemName}</span>
+                </div>
+                <button class="delete-btn" onclick="deleteListItem(this, '${listId}')"><i class="fas fa-trash-alt"></i></button>
+            `;
+            return li;
+        };
+        
+        // Check if Firebase config is provided and has a projectId before initializing
+        if (firebaseConfig && firebaseConfig.projectId) {
+            try {
+                const app = initializeApp(firebaseConfig);
+                const db = getFirestore(app);
+                const auth = getAuth(app);
+                let userId;
+
+                signInAnonymously(auth)
+                    .then((userCredential) => {
+                        userId = userCredential.user.uid;
+                        console.log("Signed in anonymously with UID:", userId);
+                        loadListsFromDB();
+                    })
+                    .catch((error) => {
+                        console.error("Anonymous sign-in failed:", error);
+                    });
+
+                const saveListsToDB = async () => {
+                    if (!userId) return;
+                    const gearItems = Array.from(gearListEl.querySelectorAll('span')).map(span => span.textContent);
+                    const foodItems = Array.from(foodListEl.querySelectorAll('span')).map(span => span.textContent);
+                    
+                    const userListsRef = doc(db, "userLists", userId);
+                    await setDoc(userListsRef, { gear: gearItems, food: foodItems });
+                };
+
+                const loadListsFromDB = async () => {
+                    if (!userId) return;
+                    const userListsRef = doc(db, "userLists", userId);
+                    const docSnap = await getDoc(userListsRef);
+
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        renderListFromDB(gearListEl, data.gear || []);
+                        renderListFromDB(foodListEl, data.food || []);
+                    }
+                };
+
+                const renderListFromDB = (listElement, items) => {
+                    listElement.innerHTML = ''; // Clear existing items
+                    items.forEach(itemText => {
+                        const li = createListItem(itemText, listElement.id);
+                        listElement.appendChild(li);
+                    });
+                };
+                
+                window.addItemToList = async function(listId, inputId) {
+                    const list = document.getElementById(listId);
+                    const input = document.getElementById(inputId);
+                    const itemName = input.value.trim();
+
+                    if (itemName) {
+                        const li = createListItem(itemName, listId);
+                        list.appendChild(li);
+                        input.value = '';
+                        await saveListsToDB();
+                    }
+                };
+
+                window.deleteListItem = async function(buttonElement) {
+                    buttonElement.parentElement.remove();
+                    await saveListsToDB();
+                };
+
+            } catch (e) {
+                console.error("Firebase initialization failed:", e);
+                 // Fallback to non-DB functions if Firebase fails to initialize
+                window.addItemToList = function(listId, inputId) {
+                    const list = document.getElementById(listId);
+                    const input = document.getElementById(inputId);
+                    const itemName = input.value.trim();
+
+                    if (itemName) {
+                        const li = createListItem(itemName, listId);
+                        list.appendChild(li);
+                        input.value = '';
+                    }
+                }
+                window.deleteListItem = function(buttonElement) {
+                    buttonElement.parentElement.remove();
+                }
+            }
+        } else {
+            console.warn("Firebase is not configured. Personal lists will not be saved.");
+            // Fallback to non-DB functions if config is missing
+            window.addItemToList = function(listId, inputId) {
+                const list = document.getElementById(listId);
+                const input = document.getElementById(inputId);
+                const itemName = input.value.trim();
+
+                if (itemName) {
+                    const li = createListItem(itemName, listId);
+                    list.appendChild(li);
+                    input.value = '';
+                }
+            }
+            window.deleteListItem = function(buttonElement) {
+                buttonElement.parentElement.remove();
+            }
+        }
+    </script>
 </body>
 </html>
-
