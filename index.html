@@ -33,7 +33,7 @@
             overflow: hidden;
         }
         .reveal-content.open {
-            max-height: 500px; /* Adjust as needed */
+            max-height: 1000px; /* Adjust as needed */
         }
         .timeline-item::before {
             content: '';
@@ -110,7 +110,7 @@
 
     <div class="relative min-h-screen lg:flex">
         <!-- Overlay for mobile -->
-        <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden lg:hidden" onclick="toggleSidebar()"></div>
+        <div id="sidebar-overlay" class="fixed inset: 0; bg-black bg-opacity-50 z-20 hidden lg:hidden" onclick="toggleSidebar()"></div>
 
         <!-- Sidebar Navigation -->
         <aside id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-white shadow-lg p-6 space-y-4 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-30">
@@ -135,7 +135,7 @@
                     <h2 class="text-4xl font-bold mb-4">The Adventure Route</h2>
                     <p class="text-lg mb-6">Welcome! Here's the planned route for our epic journey through Colorado and Wyoming, hitting some of the most beautiful national parks in the country.</p>
                     <div class="bg-white p-4 rounded-lg shadow">
-                        <img src="https://media.cntraveler.com/photos/6185465b62de01ff927a2456/16:9/w_1920,c_limit/Yellowstone_Grand%20Prismatic%20Spring_GettyImages-667781269.jpg" alt="Scenic view of Grand Prismatic Spring in Yellowstone" class="rounded-md w-full object-cover">
+                        <img src="https://i.ibb.co/Z6QvT72F/image.png" alt="RV Trip Route Overview" class="rounded-md w-full object-cover">
                     </div>
                 </section>
 
@@ -193,7 +193,7 @@
                                      <div class="timeline-dot"></div>
                                     <p class="font-bold text-emerald-600">7:10 PM onwards</p>
                                     <p class="flex items-center space-x-2">
-                                        <span>Check-in at <a href="https://www.manorrvpark.com/" target="_blank" class="font-semibold text-blue-600 hover:underline">Manor RV Campground</a>, have dinner, and get some well-deserved sleep.</span>
+                                        <span>Check-in at <a href="https://trouthavenresorts.com/manor-rv-park" target="_blank" class="font-semibold text-blue-600 hover:underline">Manor RV Campground</a>, have dinner, and get some well-deserved sleep.</span>
                                         <a href="https://waze.com/ul?q=Manor%20RV%20Campground&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
                                     </p>
                                 </div>
@@ -210,6 +210,13 @@
                                 <li><span class="font-semibold">Families:</span> Buy their own specific groceries and equipment.</li>
                             </ul>
                         </div>
+                    </div>
+                     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-8">
+                        <img src="https://www.elmonterv.com/getContentAsset/7d24908b-8577-4818-9521-7b2a8a5eb320/cc721195-df8f-4799-b974-5ade63036cab/Road-Bear-RV-Exterior-U-1-copy.jpg?language=en" alt="El Monte RV Exterior" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://www.elmonterv.com/getContentAsset/09cfdc71-9984-4e7d-84a6-1f38be73ddc8/cc721195-df8f-4799-b974-5ade63036cab/25-26-Mighty-USA-MA-Interior-Dining-Table.png?language=en" alt="El Monte RV Interior Dining" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/boulder/boulder-reservoir11_4A9D34DB-5056-A36A-0739F0F11AE11468-4a9d33725056a36_4a9d3d01-5056-a36a-07b88d501d6249f9.jpg" alt="Boulder Reservoir" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://www.elmonterv.com/getContentAsset/0d0cf84b-a40b-497f-98bd-5fe030478f4a/cc721195-df8f-4799-b974-5ade63036cab/Class_C_Large_T_interior_Forward_facing_view-(1)-(1).jpg?language=en" alt="El Monte RV Interior Forward View" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://www.elmonterv.com/getContentAsset/86c2fc5b-bc77-4840-9330-aed30ddb488e/cc721195-df8f-4799-b974-5ade63036cab/Mighty-Class_C_MT_exterior_awning_closed-(3).jpg?language=en" alt="El Monte RV Exterior with Awning Closed" class="rounded-lg shadow-md object-cover h-48 w-full">
                     </div>
                 </section>
 
@@ -260,12 +267,12 @@
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">1:00 PM - 3:00 PM</p>
+                                    <p class="font-bold text-emerald-600">1:00 PM - 2:20 PM</p>
                                     <p>Hike to <a href="https://www.alltrails.com/trail/us/colorado/alberta-falls-trail" target="_blank" class="text-blue-600 hover:underline">Alberta Falls</a>.</p>
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">3:00 PM - 5:20 PM</p>
+                                    <p class="font-bold text-emerald-600">2:20 PM - 5:20 PM</p>
                                     <p>Hike to <a href="https://www.alltrails.com/trail/us/colorado/sprague-lake-trail" target="_blank" class="text-blue-600 hover:underline">Sprague Lake</a>.</p>
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
@@ -466,7 +473,7 @@
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">12:00 PM - 4:45 PM</p>
+                                    <p class="font-bold text-emerald-600">12:00 PM - 4:15 PM</p>
                                     <p class="flex items-center space-x-2">
                                         <span>Drive to Colter Bay Village in Grand Teton National Park.</span>
                                         <a href="https://waze.com/ul?q=Colter%20Bay%20Village&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
@@ -474,7 +481,7 @@
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">4:45 PM - 5:15 PM</p>
+                                    <p class="font-bold text-emerald-600">4:15 PM - 4:45 PM</p>
                                     <p class="flex items-center space-x-2">
                                         <span>Check-in at Colter Bay Campground.</span>
                                         <a href="https://waze.com/ul?q=Colter%20Bay%20Campground&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
@@ -482,12 +489,12 @@
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">5:15 PM - 8:15 PM</p>
+                                    <p class="font-bold text-emerald-600">4:45 PM - 7:15 PM</p>
                                     <p>Hike the <a href="https://www.alltrails.com/trail/us/wyoming/colter-bay-lakeshore-trail" target="_blank" class="text-blue-600 hover:underline">Colter Bay Lakeshore Trail</a>, swim in Jackson Lake, and take a family photo.</p>
                                 </div>
                                 <div class="timeline-item relative pl-10 pb-10">
                                     <div class="timeline-dot"></div>
-                                    <p class="font-bold text-emerald-600">8:15 PM - 10:15 PM</p>
+                                    <p class="font-bold text-emerald-600">7:15 PM - 9:15 PM</p>
                                     <p>Dinner, bonfire and settle in for the night.</p>
                                 </div>
                             </div>
@@ -506,7 +513,216 @@
                      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                         <img src="https://cowboystatedaily.imgix.net/hobo-hotsprings-saratoga-wy-Carbon-County-Visitors-Council.jpg?ixlib=js-3.8.0&q=75&auto=format%2Ccompress" alt="Saratoga Hot Springs" class="rounded-lg shadow-md object-cover h-48 w-full">
                         <img src="https://lh3.googleusercontent.com/p/AF1QipPORcn-weQi4r98kQOqoxIU-KROogpt46aJcD5z=s680-w680-h510-rw" alt="Wyoming Frontier Prison entrance" class="rounded-lg shadow-md object-cover h-48 w-full">
-                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjQ5MzkxMDcvMmFhYTQ5NDg5YjYyYTk3OWI5MjJlYTU2NTZjMjI1MDIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="View from Colter Bay Lakeshore Trail" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjQ5MzkxMDcvMmFhYTQ5NDg5YjYyYTk3OWI5MjJlYTU2NTZjMjI1MDIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3Zlcnnob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="View from Colter Bay Lakeshore Trail" class="rounded-lg shadow-md object-cover h-48 w-full">
+                    </div>
+                </section>
+
+                <!-- Section Day 5: Sunrise & Shabbat Prep -->
+                <section id="day5" class="content-section" data-title="Day 5: Sunrise & Shabbat Prep">
+                    <h2 class="text-4xl font-bold mb-4">Day 5: Sunrise, Grand Teton & Shabbat Prep</h2>
+                    <p class="text-lg mb-6">Get ready for the perfect Grand Teton day! We'll start by watching a magical sunrise paint the mountains gold at the iconic Oxbow Bend. Then we're off on an adventure at Jenny Lake, taking a boat across the water to find a hidden waterfall and climb to the incredible Inspiration Point! After another beautiful hike, we'll end our amazing week with a special family Shabbat celebration together.</p>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow mb-8">
+                        <h3 class="text-xl font-semibold mb-2">Day 5 Route</h3>
+                        <img src="https://i.ibb.co/1Gh0zNHV/image.png" alt="Map of Day 5 route in Grand Teton" class="rounded-md w-full object-cover mb-4">
+                        <a id="day5-map-link" href="#" target="_blank" class="inline-block w-full text-center bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-map-location-dot mr-2"></i>View Interactive Map
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-2xl font-semibold mb-4 border-b pb-2">Timeline for Friday, August 8th</h3>
+                            <div class="relative">
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">5:30 AM - 6:00 AM</p>
+                                    <p>Drivers only: Wake up, have coffee, and prepare for departure.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">6:00 AM - 6:20 AM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Drive to Oxbow Bend.</span>
+                                        <a href="https://waze.com/ul?q=Oxbow%20Bend&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">6:20 AM - 7:00 AM</p>
+                                    <p>Sunrise at Oxbow Bend, Davening, and family picture (Golden Hour).</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">7:00 AM - 7:30 AM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Drive the scenic Teton Park Road.</span>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">7:30 AM - 7:40 AM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Short stop at Mountain View Turnout.</span>
+                                        <a href="https://waze.com/ul?q=Mountain%20View%20Turnout&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">7:40 AM - 8:40 AM</p>
+                                    <p>Breakfast at Jenny Lake and prepare food for the day.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">8:40 AM - 11:40 AM</p>
+                                    <p>Hike to <a href="https://www.alltrails.com/trail/us/wyoming/inspiration-point-via-jenny-lake-boat-shuttle" target="_blank" class="text-blue-600 hover:underline">Hidden Falls and Inspiration Point</a> via Jenny Lake Boat Shuttle.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">11:40 AM - 11:50 AM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Drive to Taggart Lake Trailhead.</span>
+                                        <a href="https://waze.com/ul?q=Taggart%20Lake%20Trailhead&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">11:50 AM - 2:50 PM</p>
+                                    <p>Hike the <a href="https://www.alltrails.com/trail/us/wyoming/taggart-lake-and-bradley-lake" target="_blank" class="text-blue-600 hover:underline">Taggart Lake and Bradley Lake Loop</a>.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">2:50 PM - 3:30 PM</p>
+                                    <p>Drive to Jackson.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">3:30 PM - 5:00 PM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Grocery shopping in Jackson.</span>
+                                        <a href="https://waze.com/ul?q=Albertsons%20Jackson%20WY&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">5:00 PM - 8:18 PM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Check-in at <a href="https://www.virginianrvpark.com/rv-sites" target="_blank" class="text-blue-600 hover:underline">Virginian RV Park</a> and prepare for Shabbat.</span>
+                                        <a href="https://waze.com/ul?q=Virginian%20RV%20Park&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">8:18 PM</p>
+                                    <p>Shabbat candle lighting and family Kabbalat Shabbat.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">9:18 PM</p>
+                                    <p>Shabbat Dinner.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">11:18 PM</p>
+                                    <p>End of day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-emerald-50 p-6 rounded-lg shadow">
+                             <h3 class="text-2xl font-semibold mb-4">Key Notes for the Day</h3>
+                            <ul class="space-y-3 list-disc list-inside">
+                                <li>We're waking up early to catch the sunrise for "golden hour" photos and to daven with the breathtaking views.</li>
+                                <li>The Taggart Lake hike can be shortened if needed, depending on the group's energy levels.</li>
+                                <li>We'll be swimming at Taggart Lake, so it's a good idea to wear your swimsuit under your clothes and have comfortable hiking shoes.</li>
+                                <li>Before Shabbat, we need to set up an "eruv." All the children will help Zechariah with this task.</li>
+                                <li>There are several grocery stores in Jackson, including a Target. Time is allocated in the schedule for shopping.</li>
+                                <li>The family Kabbalat Shabbat is the highlight of our day, so please make sure everyone participates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNDk1MjY3NjgvNTU2OWE1Mjk1YmM1ZDU0ZmU2MTMxMTIxODcxY2RhMmUuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3Zlcnnob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==" alt="Oxbow Bend" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMTA1NzkyMTMxLzUwZWY3Y2QyOGVmMGNmN2QwMTk0YWI1NmEyM2E3NjIzLmpwZyIsImVkaXRzIjp7InRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MjA0OCwiaGVpZ2h0IjoyMDQ4LCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" alt="Hidden Falls" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMTA1NzI0NjM5LzA3OTZiMDY5NjllMGRhZjkzOWQ3MmMyZGQ0ZWVjYzg3LmpwZyIsImVkaXRzIjp7InRvRm9ybWF0Ijoid2VicCIsInJlc2l6ZSI6eyJ3aWR0aCI6MjA0OCwiaGVpZ2h0IjoyMDQ4LCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" alt="Taggart Lake" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://www.virginianrvpark.com/site/assets/files/11680/rv-park.2000x1341.webp?148dn1" alt="Virginian RV Park" class="rounded-lg shadow-md object-cover h-48 w-full">
+                    </div>
+                </section>
+
+                <!-- Section Day 6: Shabbat & Jackson Fun -->
+                <section id="day6" class="content-section" data-title="Day 6: Shabbat & Jackson Fun">
+                    <h2 class="text-4xl font-bold mb-4">Day 6: Shabbat & Jackson Fun</h2>
+                    <p class="text-lg mb-6">Get ready for a day of two perfect halves! First, we'll enjoy a beautiful and peaceful Shabbat together, filled with delicious food, relaxing naps, and fun board games. Then, once Shabbat ends, we'll switch gears for a fun night out to explore the legendary cowboy bars and lively streets of downtown Jackson!</p>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow mb-8">
+                        <h3 class="text-xl font-semibold mb-2">Day 6 Route</h3>
+                         <img src="https://i.ibb.co/ycX87YpD/image.png" alt="Map of Day 5 route in Grand Teton" class="rounded-md w-full object-cover mb-4">
+                        <a id="day6-map-link" href="#" target="_blank" class="inline-block w-full text-center bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-map-location-dot mr-2"></i>View Interactive Map
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-2xl font-semibold mb-4 border-b pb-2">Timeline for Saturday, August 9th</h3>
+                            <div class="relative">
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">10:00 AM</p>
+                                    <p class="flex items-center space-x-2">
+                                        <span>Shacharit (morning prayers) at Chabad of Jackson.</span>
+                                        <a href="https://waze.com/ul?q=265%20E.%20Broadway,%20Jackson,%20WY%2083001" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a>
+                                    </p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">12:00 PM</p>
+                                    <p>Shabbat Lunch.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">2:00 PM</p>
+                                    <p>Shabbat afternoon nap.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">5:00 PM</p>
+                                    <p>Walk at <a href="https://www.mypacer.com/parks/226986/karns-meadow-jackson" target="_blank" class="text-blue-600 hover:underline">Karns Meadow Park</a>.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">6:30 PM</p>
+                                    <p>Board games, Mincha prayer, and Seudah Shlishit (third Shabbat meal).</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">9:32 PM</p>
+                                    <p>Shabbat ends.</p>
+                                </div>
+                                <div class="timeline-item relative pl-10 pb-10">
+                                    <div class="timeline-dot"></div>
+                                    <p class="font-bold text-emerald-600">9:52 PM</p>
+                                    <p>Free time in Jackson. Options include:</p>
+                                    <ul class="mt-2 ml-4 text-sm text-gray-600 list-disc list-inside">
+                                        <li class="flex items-center space-x-2"><span>Million Dollar Cowboy Bar</span> <a href="https://waze.com/ul?q=Million%20Dollar%20Cowboy%20Bar&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a></li>
+                                        <li class="flex items-center space-x-2"><span>The Silver Dollar Bar & Grill</span> <a href="https://waze.com/ul?q=The%20Silver%20Dollar%20Bar%20&%20Grill&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a></li>
+                                        <li class="flex items-center space-x-2"><span>The Rose</span> <a href="https://waze.com/ul?q=The%20Rose%20Jackson%20WY&navigate=yes" target="_blank" class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-bold hover:bg-blue-200">Waze</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-emerald-50 p-6 rounded-lg shadow">
+                             <h3 class="text-2xl font-semibold mb-4">Key Notes for the Day</h3>
+                            <ul class="space-y-3 list-disc list-inside">
+                                <li>Chabad is about a 30-minute walk from our location.</li>
+                                <li>Lunch might be a little late.</li>
+                                <li>The planned Shabbat walk is short and easy. Anyone who prefers to walk around town instead is welcome to do so.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                        <img src="https://bloximages.newyork1.vip.townnews.com/jhnewsandguide.com/content/tncms/assets/v3/editorial/3/10/3103b1ae-5003-11ee-8c60-27c18285746b/64262f2dba368.image.jpg?resize=1396%2C784" alt="Karns Meadow Park" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5f3319abc7ad9a3625a54438/1605819197573-NM4HNHERVOSXIWP04XFV/therosejh_keeganrice.jpeg" alt="The Rose in Jackson" class="rounded-lg shadow-md object-cover h-48 w-full">
+                        <img src="https://www.virginianrvpark.com/site/assets/files/11841/amenities_hero.2000x1333.webp?149z3f" alt="Virginian RV Park Amenities" class="rounded-lg shadow-md object-cover h-48 w-full">
                     </div>
                 </section>
 
@@ -719,7 +935,7 @@
             const id = section.id;
             const link = document.createElement('a');
             link.href = '#';
-            link.textContent = title;
+            link.innerHTML = title; // Use innerHTML to render the sparkle emoji
             link.className = 'sidebar-link block p-3 rounded-lg hover:bg-gray-100 transition-colors duration-200';
             link.setAttribute('data-target', id);
             
@@ -809,6 +1025,34 @@
             document.getElementById('day4-map-link').href = directionsUrl.toString();
         }
 
+        function generateDay5Map() {
+            const locations = {
+                origin: 'Colter Bay Campground',
+                destination: 'Virginian RV Park',
+                waypoints: 'Oxbow Bend|Mountain View Turnout|Jenny Lake Visitor Center|Taggart Lake Trailhead|Albertsons Jackson WY'
+            };
+            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
+            directionsUrl.searchParams.append('origin', locations.origin);
+            directionsUrl.searchParams.append('destination', locations.destination);
+            directionsUrl.searchParams.append('waypoints', locations.waypoints);
+            directionsUrl.searchParams.append('travelmode', 'driving');
+            document.getElementById('day5-map-link').href = directionsUrl.toString();
+        }
+
+        function generateDay6Map() {
+            const locations = {
+                origin: 'Virginian RV Park',
+                destination: 'Virginian RV Park',
+                waypoints: '265 E Broadway Ave, Jackson, WY 83001, ארצות הברית|Virginian RV Park|Karns Meadow Park|Virginian RV Park|The Rose Jackson WY'
+            };
+            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
+            directionsUrl.searchParams.append('origin', locations.origin);
+            directionsUrl.searchParams.append('destination', locations.destination);
+            directionsUrl.searchParams.append('waypoints', locations.waypoints);
+            directionsUrl.searchParams.append('travelmode', 'driving');
+            document.getElementById('day6-map-link').href = directionsUrl.toString();
+        }
+
         // --- GEMINI API INTEGRATION ---
         const modal = document.getElementById('ai-modal');
         const modalTitle = document.getElementById('modal-title');
@@ -826,14 +1070,20 @@
 
         function displayResult(title, content) {
             modalTitle.textContent = title;
-            const formattedContent = content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                                          .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                                          .replace(/\n/g, '<br>');
+            // Basic markdown-like formatting
+            const formattedContent = content
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')     // Italics
+                .replace(/(\n\s*\n)/g, '<br><br>')        // Paragraph breaks
+                .replace(/\n/g, '<br>');                  // Line breaks
             modalContent.innerHTML = `<div class="prose max-w-none">${formattedContent}</div>`;
         }
 
+
         async function callGemini(prompt) {
-            const apiKey = ""; // API key is handled by the environment
+            // NOTE: The API key is an empty string. The execution environment will
+            // automatically handle authentication.
+            const apiKey = ""; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             
             const payload = {
@@ -851,18 +1101,18 @@
 
                 const result = await response.json();
                 
-                if (result.candidates && result.candidates.length > 0) {
+                if (result.candidates && result.candidates.length > 0 && result.candidates[0].content.parts[0].text) {
                     return result.candidates[0].content.parts[0].text;
                 } else {
                     return "Sorry, the AI couldn't generate a response. The response was empty.";
                 }
             } catch (error) {
                 console.error("Gemini API Error:", error);
-                return `Sorry, something went wrong. Could not get a response. Please check the console for details.`;
+                return `Sorry, something went wrong. Could not get a response. Please check the console for details. Error: ${error.message}`;
             }
         }
 
-        async function generateMealPlan() {
+        window.generateMealPlan = async function() {
             showModal("Generating Meal Plan...");
             const communalListItems = Array.from(document.querySelectorAll('#communal-list li')).map(li => li.innerText.trim());
             const personalFoodListItems = Array.from(document.querySelectorAll('#personal-food-list li span')).map(span => span.innerText.trim());
@@ -876,15 +1126,15 @@
 
             const shoppingList = combinedFoodList.join(', ');
 
-            const prompt = `You are a creative chef specializing in easy campfire and RV cooking for large families. Based on the following combined communal and personal shopping list, create a 5-day dinner meal plan. For each day, provide a fun meal name, a list of ingredients needed from the list, and simple cooking instructions suitable for a grill or basic RV kitchen. The available food items are: ${shoppingList}. Also suggest a special meal for a Shabbat dinner.`;
+            const prompt = `You are a creative chef specializing in easy campfire and RV cooking for large families. Based on the following combined communal and personal shopping list, create a 5-day dinner meal plan. For each day, provide a fun meal name, a list of ingredients needed from the list, and simple cooking instructions suitable for a grill or basic RV kitchen. The available food items are: ${shoppingList}. Also suggest a special meal for a Shabbat dinner. Format the response cleanly with clear headings for each day.`;
             
             const result = await callGemini(prompt);
             displayResult("Your AI-Generated Meal Plan", result);
         }
 
-        async function suggestActivities(location) {
+        window.suggestActivities = async function(location) {
             showModal(`Suggesting activities for ${location}...`);
-            const prompt = `You are an expert tour guide for US National Parks. A large family with children is visiting ${location} in their RV. Suggest 3-5 fun, family-friendly activities. For each activity, provide a brief description, the estimated time commitment, and a tip for visiting with children.`;
+            const prompt = `You are an expert tour guide for US National Parks. A large family with children is visiting ${location} in their RV. Suggest 3-5 fun, family-friendly activities. For each activity, provide a brief description, the estimated time commitment, and a tip for visiting with children. Format the response clearly with headings for each activity.`;
 
             const result = await callGemini(prompt);
             displayResult(`Activity Ideas for ${location}`, result);
@@ -896,38 +1146,46 @@
             generateDay2Map();
             generateDay3Map();
             generateDay4Map();
+            generateDay5Map();
+            generateDay6Map();
         };
 
     </script>
     
     <!-- FIREBASE INTEGRATION SCRIPT -->
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
-        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        // IMPORTANT: Use the latest SDK version for best performance and features.
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getFirestore, doc, setDoc, getDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyA6ld6nwIAJ4kkB8vv-Ghn7Pkn700ebOM8",
-            authDomain: "rvfamilytrip-28e56.firebaseapp.com",
-            projectId: "rvfamilytrip-28e56",
-            storageBucket: "rvfamilytrip-28e56.appspot.com",
-            messagingSenderId: "248656767489",
-            appId: "1:248656767489:web:6ce94b562ff1859c0d6e00",
-            measurementId: "G-DGXFWWHHYT"
-        };
+        // --- Firebase Config ---
+        // This configuration is a placeholder. In a real environment, these values
+        // would be securely managed. The __firebase_config variable will be
+        // provided by the hosting environment.
+        const firebaseConfig = typeof __firebase_config !== 'undefined' 
+            ? JSON.parse(__firebase_config)
+            : {
+                apiKey: "AIzaSyA6ld6nwIAJ4kkB8vv-Ghn7Pkn700ebOM8",
+                authDomain: "rvfamilytrip-28e56.firebaseapp.com",
+                projectId: "rvfamilytrip-28e56",
+                storageBucket: "rvfamilytrip-28e56.appspot.com",
+                messagingSenderId: "248656767489",
+                appId: "1:248656767489:web:6ce94b562ff1859c0d6e00"
+              };
         
         // --- App Logic ---
         const gearListEl = document.getElementById('personal-gear-list');
         const foodListEl = document.getElementById('personal-food-list');
-        let db, auth, userId;
+        let db, auth, userId, unsubscribe;
 
         const createListItem = (itemName, listId) => {
             const li = document.createElement('li');
-            li.className = 'list-item-container';
+            li.className = 'list-item-container p-2 hover:bg-gray-50 rounded-md';
             li.innerHTML = `
                 <div class="flex items-center">
                     <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 mr-3">
-                    <span>${itemName}</span>
+                    <span class="text-gray-800">${itemName}</span>
                 </div>
                 <button class="delete-btn" onclick="deleteListItem(this, '${listId}')"><i class="fas fa-trash-alt"></i></button>
             `;
@@ -939,19 +1197,26 @@
             db = getFirestore(app);
             auth = getAuth(app);
 
-            onAuthStateChanged(auth, user => {
+            onAuthStateChanged(auth, async (user) => {
                 if (user) {
                     userId = user.uid;
                     console.log("User is signed in with UID:", userId);
-                    loadListsFromDB();
+                    // Detach any previous listener before attaching a new one
+                    if (unsubscribe) unsubscribe(); 
+                    listenForListChanges();
                 } else {
-                    signInAnonymously(auth).catch(error => {
-                        console.error("Anonymous sign-in failed. Please ensure Anonymous Sign-In is enabled in your Firebase project's Authentication settings.", error);
-                    });
+                    // Use custom token if available, otherwise sign in anonymously
+                    if (typeof __initial_auth_token !== 'undefined') {
+                        await signInWithCustomToken(auth, __initial_auth_token);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
                 }
             });
         } catch (e) {
             console.error("Firebase initialization failed:", e);
+            gearListEl.innerHTML = '<li>Error: Could not connect to the database.</li>';
+            foodListEl.innerHTML = '<li>Error: Could not connect to the database.</li>';
         }
 
         const saveListsToDB = async () => {
@@ -963,22 +1228,27 @@
             await setDoc(userListsRef, { gear: gearItems, food: foodItems });
         };
 
-        const loadListsFromDB = async () => {
+        const listenForListChanges = () => {
             if (!userId || !db) return;
             const userListsRef = doc(db, "userLists", userId);
-            const docSnap = await getDoc(userListsRef);
-
-            if (docSnap.exists() && (docSnap.data().gear.length > 0 || docSnap.data().food.length > 0)) {
-                const data = docSnap.data();
-                renderListFromDB(gearListEl, data.gear || []);
-                renderListFromDB(foodListEl, data.food || []);
-            } else {
-                 // If no data exists in the database, load the pre-made list
-                const preMadeGearList = [
-                    "Food and drinks (breakfast, sandwiches and snack)", "Bedding", "pillows and blankets", "Towels", "Toiletries (shampoo, soap, toothpaste)", "Bathroom spray", "Toilet paper", "Wet wipes and cleaning wipes", "Trash bags", "Kitchenware (pots, pans, cutlery, plates, cups, bawls)", "food storage containers", "Cutting board and knives", "Dish soap and sponges", "Kitchen towels", "Oil, salt, and spices", "Coffee and tea", "Insect repellent (spray and candles)", "Flashlights", "First-aid kit", "Sunscreen", "Games and books", "Camping gear (chairs, mat)", "BBQ equipment", "Binoculars (for spotting wildlife)"
-                ];
-                renderListFromDB(gearListEl, preMadeGearList);
-            }
+            
+            unsubscribe = onSnapshot(userListsRef, (docSnap) => {
+                if (docSnap.exists()) {
+                    const data = docSnap.data();
+                    renderListFromDB(gearListEl, data.gear || []);
+                    renderListFromDB(foodListEl, data.food || []);
+                } else {
+                    // If no data exists in the database, load and save the pre-made list
+                    const preMadeGearList = [
+                        "Food and drinks (breakfast, sandwiches and snack)", "Bedding", "pillows and blankets", "Towels", "Toiletries (shampoo, soap, toothpaste)", "Bathroom spray", "Toilet paper", "Wet wipes and cleaning wipes", "Trash bags", "Kitchenware (pots, pans, cutlery, plates, cups, bawls)", "food storage containers", "Cutting board and knives", "Dish soap and sponges", "Kitchen towels", "Oil, salt, and spices", "Coffee and tea", "Insect repellent (spray and candles)", "Flashlights", "First-aid kit", "Sunscreen", "Games and books", "Camping gear (chairs, mat)", "BBQ equipment", "Binoculars (for spotting wildlife)"
+                    ];
+                    renderListFromDB(gearListEl, preMadeGearList);
+                    renderListFromDB(foodListEl, []); // Start with an empty food list
+                    saveListsToDB(); // Save the initial state
+                }
+            }, (error) => {
+                console.error("Error listening to list changes:", error);
+            });
         };
 
         const renderListFromDB = (listElement, items) => {
@@ -990,24 +1260,39 @@
         };
         
         window.addItemToList = async function(listId, inputId) {
-            const list = document.getElementById(listId);
             const input = document.getElementById(inputId);
             const itemName = input.value.trim();
 
             if (itemName) {
-                const li = createListItem(itemName, listId);
-                list.appendChild(li);
-                input.value = '';
-                if (db) {
-                    await saveListsToDB();
+                const listEl = document.getElementById(listId);
+                const currentItems = Array.from(listEl.querySelectorAll('span')).map(span => span.textContent);
+                currentItems.push(itemName);
+                
+                // Update the correct list
+                if(listId === 'personal-gear-list') {
+                    const foodItems = Array.from(foodListEl.querySelectorAll('span')).map(span => span.textContent);
+                    await setDoc(doc(db, "userLists", userId), { gear: currentItems, food: foodItems });
+                } else {
+                    const gearItems = Array.from(gearListEl.querySelectorAll('span')).map(span => span.textContent);
+                    await setDoc(doc(db, "userLists", userId), { gear: gearItems, food: currentItems });
                 }
+                input.value = '';
             }
         };
 
-        window.deleteListItem = async function(buttonElement) {
-            buttonElement.parentElement.remove();
-            if (db) {
-                await saveListsToDB();
+        window.deleteListItem = async function(buttonElement, listId) {
+            const itemText = buttonElement.previousElementSibling.querySelector('span').textContent;
+            const listEl = document.getElementById(listId);
+            
+            let currentItems = Array.from(listEl.querySelectorAll('span')).map(span => span.textContent);
+            currentItems = currentItems.filter(item => item !== itemText);
+
+            if(listId === 'personal-gear-list') {
+                const foodItems = Array.from(foodListEl.querySelectorAll('span')).map(span => span.textContent);
+                await setDoc(doc(db, "userLists", userId), { gear: currentItems, food: foodItems });
+            } else {
+                const gearItems = Array.from(gearListEl.querySelectorAll('span')).map(span => span.textContent);
+                await setDoc(doc(db, "userLists", userId), { gear: gearItems, food: currentItems });
             }
         };
     </script>
