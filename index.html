@@ -1709,10 +1709,11 @@ function generateDay7Map() {
     const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
     directionsUrl.searchParams.append('origin', locations.origin);
     directionsUrl.searchParams.append('destination', locations.destination);
-    directionsUrl.search_params.append('waypoints', locations.waypoints);
+    directionsUrl.searchparams.append('waypoints', locations.waypoints);
     directionsUrl.searchParams.append('travelmode', 'driving');
     document.getElementById('day9-map-link').href = directionsUrl.toString();
 }
+        
         function generateDay10Map() {
     const locations = {
         origin: 'Canyon Campground, Yellowstone National Park',
