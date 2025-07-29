@@ -1588,152 +1588,167 @@
             }
         }
         
-        // --- MAP GENERATION ---
-        function generateDay1Map() {
-            const locations = {
-                origin: 'Denver International Airport',
-                rvPickup: 'El Monte RV, Commerce City, CO',
-                reservoir: 'Boulder Reservoir, Boulder, CO',
-                destination: 'Manor RV Park, Estes Park, CO'
-            };
-            const waypoints = `${locations.rvPickup}|${locations.reservoir}`;
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day1-map-link').href = directionsUrl.toString();
-        }
-
-        function generateDay2Map() {
-            const locations = {
-                origin: 'Manor RV Park, Estes Park, CO',
-                destination: 'Bear Lake Trailhead, Estes Park, CO',
-                waypoints: 'RMNP Park & Ride|Emerald Lake Trailhead, CO|Alberta Falls|Sprague Lake'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day2-map-link').href = directionsUrl.toString();
-        }
-
-        function generateDay3Map() {
-            const locations = {
-                origin: 'Manor RV Park, Estes Park, CO',
-                destination: 'Green Ridge Campground',
-                waypoints: 'Estes Park High School|40.68918,-105.59253|Many Parks Curve Overlook|Rainbow Curve Overlook|Forest Canyon Overlook|Alpine Visitor Center|Medicine Bow Curve Overlook|Farview Curve Viewpoint|Adams Falls Trailhead'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day3-map-link').href = directionsUrl.toString();
-        }
-
-        function generateDay4Map() {
-            const locations = {
-                origin: 'Green Ridge Campground',
-                destination: 'Colter Bay Campground',
-                waypoints: 'Saratoga Hot Springs, WY|Wyoming Frontier Prison|Starbucks Rawlins WY|Colter Bay Village'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day4-map-link').href = directionsUrl.toString();
-        }
-
-        function generateDay5Map() {
-            const locations = {
-                origin: 'Colter Bay Campground',
-                destination: 'Virginian RV Park',
-                waypoints: 'Oxbow Bend|Mountain View Turnout|Jenny Lake Visitor Center|Taggart Lake Trailhead|Albertsons Jackson WY'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day5-map-link').href = directionsUrl.toString();
-        }
-
-        function generateDay6Map() {
-            const locations = {
-                origin: 'Virginian RV Park',
-                destination: 'Virginian RV Park',
-                waypoints: '265 E Broadway Ave, Jackson, WY 83001, ארצות הברית|Virginian RV Park|Karns Meadow Park|Virginian RV Park|The Rose Jackson WY'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day6-map-link').href = directionsUrl.toString();
-        }
-function generateDay7Map() {
-            const locations = {
-                origin: 'Virginian RV Park',
-                destination: 'Madison Campground, Yellowstone National Park',
-                 waypoints: 'Old Faithful|85PFF4JW+CF|Madison Campground|Midway Geyser Basin|Fairy Falls Trailhead|Lower Geyser Basin|Firehole River Swimming Area'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day7-map-link').href = directionsUrl.toString();
-        }
-         function generateDay8Map() {
-            const locations = {
-                origin: 'Madison Campground, Yellowstone National Park',
-                destination: 'Madison Campground, Yellowstone National Park',
-                waypoints: 'West Yellowstone|Grizzly & Wolf Discovery Center|Gibbon Falls|Norris Geyser Basin|Mammoth Hot Springs|Yellowstone Hot Springs'
-            };
-            const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
-            directionsUrl.searchParams.append('origin', locations.origin);
-            directionsUrl.searchParams.append('destination', locations.destination);
-            directionsUrl.searchParams.append('waypoints', locations.waypoints);
-            directionsUrl.searchParams.append('travelmode', 'driving');
-            document.getElementById('day8-map-link').href = directionsUrl.toString();
-        }
-        function generateDay9Map() {
-            const locations = {
-                origin: 'Madison Campground, Yellowstone National Park',
-                destination: 'Canyon Campground, Yellowstone National Park',
-                waypoints: 'Harlequin Lake Trailhead, Yellowstone|Canyon Visitor Education Center|Yellowstone River Picnic Area Trailhead|Lamar Valley'
-                };
-    const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
+       // --- MAP GENERATION ---
+function generateDay1Map() {
+    const locations = {
+        origin: 'Denver International Airport',
+        rvPickup: 'El Monte RV, Commerce City, CO',
+        reservoir: 'Boulder Reservoir, Boulder, CO',
+        destination: 'Manor RV Park, Estes Park, CO'
+    };
+    const waypoints = `${locations.rvPickup}|${locations.reservoir}`;
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
     directionsUrl.searchParams.append('origin', locations.origin);
     directionsUrl.searchParams.append('destination', locations.destination);
-    directionsUrl.searchparams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('waypoints', waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day1-map-link').href = directionsUrl.toString();
+}
+
+function generateDay2Map() {
+    const locations = {
+        origin: 'Manor RV Park, Estes Park, CO',
+        destination: 'Bear Lake Trailhead, Estes Park, CO',
+        waypoints: 'RMNP Park & Ride|Emerald Lake Trailhead, CO|Alberta Falls|Sprague Lake'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day2-map-link').href = directionsUrl.toString();
+}
+
+function generateDay3Map() {
+    const locations = {
+        origin: 'Manor RV Park, Estes Park, CO',
+        destination: 'Green Ridge Campground',
+        waypoints: 'Estes Park High School|40.68918,-105.59253|Many Parks Curve Overlook|Rainbow Curve Overlook|Forest Canyon Overlook|Alpine Visitor Center|Medicine Bow Curve Overlook|Farview Curve Viewpoint|Adams Falls Trailhead'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day3-map-link').href = directionsUrl.toString();
+}
+
+function generateDay4Map() {
+    const locations = {
+        origin: 'Green Ridge Campground',
+        destination: 'Colter Bay Campground',
+        waypoints: 'Saratoga Hot Springs, WY|Wyoming Frontier Prison|Starbucks Rawlins WY|Colter Bay Village'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day4-map-link').href = directionsUrl.toString();
+}
+
+function generateDay5Map() {
+    const locations = {
+        origin: 'Colter Bay Campground',
+        destination: 'Virginian RV Park',
+        waypoints: 'Oxbow Bend|Mountain View Turnout|Jenny Lake Visitor Center|Taggart Lake Trailhead|Albertsons Jackson WY'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day5-map-link').href = directionsUrl.toString();
+}
+
+function generateDay6Map() {
+    const locations = {
+        origin: 'Virginian RV Park',
+        destination: 'Virginian RV Park',
+        waypoints: '265 E Broadway Ave, Jackson, WY 83001|Karns Meadow Park|The Rose Jackson WY'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day6-map-link').href = directionsUrl.toString();
+}
+
+function generateDay7Map() {
+    const locations = {
+        origin: 'Virginian RV Park',
+        destination: 'Madison Campground, Yellowstone National Park',
+        waypoints: 'Old Faithful|Madison Campground|Midway Geyser Basin|Fairy Falls Trailhead|Lower Geyser Basin|Firehole River Swimming Area'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day7-map-link').href = directionsUrl.toString();
+}
+
+function generateDay8Map() {
+    const locations = {
+        origin: 'Madison Campground, Yellowstone National Park',
+        destination: 'Madison Campground, Yellowstone National Park',
+        waypoints: 'West Yellowstone|Grizzly & Wolf Discovery Center|Gibbon Falls|Norris Geyser Basin|Mammoth Hot Springs|Yellowstone Hot Springs'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
+    directionsUrl.searchParams.append('travelmode', 'driving');
+    document.getElementById('day8-map-link').href = directionsUrl.toString();
+}
+
+function generateDay9Map() {
+    const locations = {
+        origin: 'Madison Campground, Yellowstone National Park',
+        destination: 'Canyon Campground, Yellowstone National Park',
+        waypoints: 'Harlequin Lake Trailhead, Yellowstone|Canyon Visitor Education Center|Yellowstone River Picnic Area Trailhead|Lamar Valley'
+    };
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
+    directionsUrl.searchParams.append('origin', locations.origin);
+    directionsUrl.searchParams.append('destination', locations.destination);
+    directionsUrl.searchParams.append('waypoints', locations.waypoints);
     directionsUrl.searchParams.append('travelmode', 'driving');
     document.getElementById('day9-map-link').href = directionsUrl.toString();
 }
-        
-        function generateDay10Map() {
+
+function generateDay10Map() {
     const locations = {
         origin: 'Canyon Campground, Yellowstone National Park',
         destination: 'Canyon Campground, Yellowstone National Park',
         waypoints: 'Lookout Point, Yellowstone|Artist Point, Yellowstone|Uncle Tom\'s Point|Brink of the Lower Falls Trailhead|Inspiration Point, Yellowstone|Mud Volcano Trailhead|Gull Point Drive, Yellowstone|Lake General Store, Yellowstone'
     };
-    const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
     directionsUrl.searchParams.append('origin', locations.origin);
     directionsUrl.searchParams.append('destination', locations.destination);
     directionsUrl.searchParams.append('waypoints', locations.waypoints);
     directionsUrl.searchParams.append('travelmode', 'driving');
     document.getElementById('day10-map-link').href = directionsUrl.toString();
 }
-        function generateDay11Map() {
+
+function generateDay11Map() {
     const locations = {
         origin: 'Canyon Campground, Yellowstone National Park',
         destination: 'Fort Collins / Lakeside KOA Holiday',
         waypoints: 'Lamar Valley|Cody, WY|Wyoming Dinosaur Center|Casper, WY'
     };
-    const directionsUrl = new URL('https://www.google.com/maps/dir/?api=1');
+    const directionsUrl = new URL('https://www.google.com/maps/dir/');
+    directionsUrl.searchParams.append('api', '1');
     directionsUrl.searchParams.append('origin', locations.origin);
     directionsUrl.searchParams.append('destination', locations.destination);
     directionsUrl.searchParams.append('waypoints', locations.waypoints);
